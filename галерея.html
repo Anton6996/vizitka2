@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ТРОФЕИ - Пушка Бомба</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="movie-header">
+            <h1><i class="fas fa-trophy"></i> ЗАЛ СЛАВЫ</h1>
+            <p class="tagline">Трофеи, мемы и доказательства моей легендарности</p>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> ГШ</a></li>
+                    <li><a href="осебе.html"><i class="fas fa-user"></i> Профиль</a></li>
+                    <li><a href="увлечения.html"><i class="fas fa-gamepad"></i> Досуг</a></li>
+                    <li><a href="галерея.html" class="active"><i class="fas fa-images"></i> Трофеи</a></li>
+                    <li><a href="контакты.html"><i class="fas fa-comments"></i> Вызов</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Статистика галереи -->
+            <div class="gallery-stats">
+                <div class="gallery-stat">
+                    <i class="fas fa-camera"></i>
+                    <span>Фото: 47</span>
+                </div>
+                <div class="gallery-stat">
+                    <i class="fas fa-skull"></i>
+                    <span>Врагов: 23</span>
+                </div>
+                <div class="gallery-stat">
+                    <i class="fas fa-beer"></i>
+                    <span>Бутылок: ∞</span>
+                </div>
+                <div class="gallery-stat">
+                    <i class="fas fa-laugh"></i>
+                    <span>Мемов: 15</span>
+                </div>
+            </div>
+
+            <!-- ФИЛЬТРЫ -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">ВСЁ</button>
+                <button class="filter-btn" data-filter="tanks">ТАНКИ</button>
+                <button class="filter-btn" data-filter="alcohol">БУХЛО</button>
+                <button class="filter-btn" data-filter="memes">МЕМЫ</button>
+                <button class="filter-btn" data-filter="enemies">ВРАГИ</button>
+                <button class="filter-btn" data-filter="epic">ЭПИЧНО</button>
+            </div>
+
+            <!-- ГАЛЕРЕЯ -->
+            <div class="gallery-grid">
+                <!-- ТАНКИ -->
+                <div class="gallery-item" data-category="tanks epic">
+                    <div class="gallery-card">
+                        <img src="гулять1.jpg" alt="Ищу себя" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Танк в горах</div>
+                            <div class="gallery-desc">Искал арту в горах Дагестана. Не нашёл, зато виды красивые.</div>
+                            <div class="gallery-tags">
+                                <span class="tag">#танки</span>
+                                <span class="tag">#горы</span>
+                                <span class="tag">#артагде</span>
+                            </div>
+                        </div>
+                        <div class="gallery-badge">
+                            <i class="fas fa-medal"></i> ЛУЧШЕЕ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tanks">
+                    <div class="gallery-card">
+                        <img src="гулять2.jpg" alt="Дагестан" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Позиция снайпера</div>
+                            <div class="gallery-desc">Отсюда удобно бить по вражеским ЛТ. Или просто пиво пить.</div>
+                            <div class="gallery-tags">
+                                <span class="tag">#снайпер</span>
+                                <span class="tag">#высота</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- БУХЛО -->
+                <div class="gallery-item" data-category="alcohol epic">
+                    <div class="gallery-card">
+                        <div class="beer-counter">
+                            <i class="fas fa-beer"></i>
+                            <span>ПИВОМЕТР</span>
+                            <div class="counter">12/10</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Рекордный вечер</div>
+                            <div class="gallery-desc">12 литров за ночь. Утром проснулся героем. Или инвалидом.</div>
+                            <div class="gallery-tags">
+                                <span class="tag">#рекорд</span>
+                                <span class="tag">#выжил</span>
+                                <span class="tag">#горжусь</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- РИСУНКИ -->
+                <div class="gallery-item" data-category="memes epic">
+                    <div class="gallery-card">
+                        <img src="рисунок1.jpg" alt="Рисунок 1" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Тётя с характером</div>
+                            <div class="gallery-desc">Нарисовал в подпитии. Получилась моя душа - красивая, но злая.</div>
+                            <div class="gallery-tags">
+                                <span class="tag">#рисунок</span>
+                                <span class="tag">#пьяный</span>
+                                <span class="tag">#талант</span>
+                            </div>
+                        </div>
+                        <div class="gallery-badge">
+                            <i class="fas fa-palette"></i> ИСКУССТВО
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="memes">
+                    <div class="gallery-card">
+                        <img src="рисунок2.jpg" alt="Рисунок 2" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Ночное вдохновение</div>
+                            <div class="gallery-desc">В 3 ночи после 5 пива. Рука дрожала, но получилось атмосферно.</div>
+                            <div class="gallery-tags">
+                                <span class="tag">#ночь</span>
+                                <span class="tag">#пиво</span>
+                                <span class="tag">#вдохновение</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <!-- ВРАГИ -->
+                <div class="gallery-item" data-category="enemies epic">
+                    <div class="gallery-card enemy-card">
+                        <div class="enemy-avatar">
+                            <img src="эдик.jpg" alt="Эдик" class="enemy-img">
+                            <div class="wanted-sign">WANTED</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Враг №1: Эдик</div>
+                            <div class="gallery-desc">Вечно трезвый, играет за арту, не понимает юмора. Преступления: играет за арту.</div>
+                            <div class="gallery-tags">
+                                <span class="tag enemy">#арта</span>
+                                <span class="tag enemy">#трезвый</span>
+                                <span class="tag enemy">#враг</span>
+                            </div>
+                            <div class="bounty">
+                                <i class="fas fa-coins"></i> Награда: Ящик пива
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ЭДИК -->
+                <div class="gallery-item" data-category="enemies memes">
+                    <div class="gallery-card">
+                        <img src="эдик2.jpg" alt="Эдик" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Пьяный Эдик</div>
+                            <div class="gallery-desc">Личность неизвестна. Подозревается в связях с Эдиком. Или это он в маске?</div>
+                            <div class="gallery-tags">
+                                <span class="tag">#загадка</span>
+                                <span class="tag">#Эдик</span>
+                                <span class="tag">#ктовы</span>
+                            </div>
+                            <div class="mystery">
+                                <i class="fas fa-question"></i> НЕИЗВЕСТНО
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- МЕМЫ -->
+                <div class="gallery-item" data-category="memes">
+                    <div class="gallery-card">
+                        <div class="meme-content">
+                            <div class="meme-text">КОГДА ВИДИШЬ АРТУ НА ВРАЖЕСКОЙ КОМАНДЕ</div>
+                            <div class="meme-img">😡🔫💥</div>
+                            <div class="meme-caption">Моё лицо в этот момент</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">АРТОФОБИЯ</div>
+                            <div class="gallery-desc">Единственное, что вызывает у меня большие эмоции.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="memes alcohol">
+                    <div class="gallery-card">
+                        <div class="meme-content">
+                            <div class="meme-text">ПЯТОЕ ПИВО:</div>
+                            <div class="meme-img">🍺🤪🎯</div>
+                            <div class="meme-progress">
+                                <div class="progress-label">Точность стрельбы</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 20%"></div>
+                                </div>
+                                <div class="progress-percent">20%</div>
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Пиво vs Точность</div>
+                            <div class="gallery-desc">Обратная зависимость. Но кому нужна точность, когда весело?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ДОСТИЖЕНИЯ -->
+                <div class="gallery-item" data-category="epic">
+                    <div class="gallery-card achievement-card">
+                        <div class="achievement-icon">🏆</div>
+                        <div class="achievement-content">
+                            <h3>Кубок "Непробиваемый"</h3>
+                            <p>Получен за то, что выжил после корпоратива с бухгалтерией.</p>
+                            <div class="achievement-date">2023</div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Выживание</div>
+                            <div class="gallery-desc">Настоящий тест на прочность.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ОРУЖИЕ -->
+                <div class="gallery-item" data-category="tanks">
+                    <div class="gallery-card">
+                        <div class="weapon-display">
+                            <div class="weapon-icon">🔫</div>
+                            <div class="weapon-stats">
+                                <div class="stat">
+                                    <span>Калибр:</span>
+                                    <span>155mm</span>
+                                </div>
+                                <div class="stat">
+                                    <span>Урон:</span>
+                                    <span>750</span>
+                                </div>
+                                <div class="stat">
+                                    <span>Пробитие:</span>
+                                    <span>Макс.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-title">Орудие мечты</div>
+                            <div class="gallery-desc">С таким можно и арту достать. Ну, почти.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- Конец галереи -->
+
+            <!-- ПАГИНАЦИЯ -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">...</button>
+                <button class="page-btn">10</button>
+                <button class="page-btn next">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- СТАТИСТИКА ПОСЛЕ ГАЛЕРЕИ -->
+            <div class="gallery-summary">
+                <div class="summary-item">
+                    <i class="fas fa-eye"></i>
+                    <div>
+                        <div class="summary-number">1,247</div>
+                        <div class="summary-label">Просмотров</div>
+                    </div>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-thumbs-up"></i>
+                    <div>
+                        <div class="summary-number">893</div>
+                        <div class="summary-label">Лайков</div>
+                    </div>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-beer"></i>
+                    <div>
+                        <div class="summary-number">∞</div>
+                        <div class="summary-label">Вдохновения</div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-camera"></i> ФОТОАРХИВ</h4>
+                    <p>Все фото настоящие. Почти все. Некоторые - художественная гипербола.</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-exclamation-circle"></i> ВНИМАНИЕ</h4>
+                    <p>При просмотре галереи рекомендуется иметь при себе пиво.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Трофеев собрано: <span id="trophy-count">47</span> из ∞</p>
+                <button class="footer-link" id="upload-btn">
+                    <i class="fas fa-upload"></i> ДОБАВИТЬ ТРОФЕЙ
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- МОДАЛКА ДЛЯ ПРЕВЬЮ -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+                <div id="modal-tags"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ФИЛЬТРАЦИЯ
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Убираем активный класс у всех кнопок
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Добавляем активный класс нажатой кнопке
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+        
+        // МОДАЛЬНОЕ ОКНО
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDesc = document.getElementById('modal-desc');
+        const modalTags = document.getElementById('modal-tags');
+        const closeModal = document.querySelector('.modal-close');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const title = item.querySelector('.gallery-title');
+                const desc = item.querySelector('.gallery-desc');
+                const tags = item.querySelector('.gallery-tags');
+                
+                if (img && img.src) {
+                    modalImg.src = img.src;
+                    modalTitle.textContent = title ? title.textContent : 'Без названия';
+                    modalDesc.textContent = desc ? desc.textContent : 'Нет описания';
+                    
+                    if (tags) {
+                        modalTags.innerHTML = tags.innerHTML;
+                    } else {
+                        modalTags.innerHTML = '<span class="tag">#безтегов</span>';
+                    }
+                    
+                    modal.style.display = 'flex';
+                }
+            });
+        });
+        
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
+        // АНИМАЦИЯ ПРИ ЗАГРУЗКЕ
+        document.addEventListener('DOMContentLoaded', () => {
+            galleryItems.forEach((item, index) => {
+                item.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+        
+        // КНОПКА ЗАГРУЗКИ
+        document.getElementById('upload-btn').addEventListener('click', () => {
+            alert('Для загрузки трофея отправьте фото с пивом в одной руке!');
+        });
+        
+        // СЧЁТЧИК ТРОФЕЕВ
+        let trophies = 47;
+        const trophyCount = document.getElementById('trophy-count');
+        
+        setInterval(() => {
+            trophies++;
+            trophyCount.textContent = trophies;
+            trophyCount.style.color = '#ffd700';
+            setTimeout(() => {
+                trophyCount.style.color = '';
+            }, 500);
+        }, 30000); // Новый трофей каждые 30 секунд
+        
+        // СЛУЧАЙНЫЙ ФИЛЬТР
+        setInterval(() => {
+            const randomFilter = ['all', 'tanks', 'alcohol', 'memes', 'enemies', 'epic'][Math.floor(Math.random() * 6)];
+            filterButtons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === randomFilter) {
+                    btn.click();
+                }
+            });
+        }, 60000); // Меняем фильтр каждую минуту
+    </script>
+</body>
+</html>
